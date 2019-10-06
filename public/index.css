@@ -1,0 +1,253 @@
+
+
+
+
+
+
+/* .center-menu{
+   /* cursor:pointer; */
+   /*margin-left:40px;
+} */
+/* body {
+    background-color:gray;
+} */
+
+/* NowPlaying */
+
+.img-div-now{ 
+    width: 100%;
+    position: relative;
+    }
+.hidden-now{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+     opacity:0;
+    transition: 0.3s;
+}
+.hidden-now:hover{
+    opacity:1;
+}
+ .reservation-now { 
+    position: absolute;
+    top: 60px;
+    left: 35px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(244, 201, 23);
+    color: rgb(244, 201, 23);
+    font-size:20px;
+    padding:10px;
+    cursor: pointer;
+    transition:0.2s
+}
+.description-now { 
+    position: absolute; 
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    font-size:20px;
+    color: ivory; 
+    cursor: pointer;
+    transition:0.2s
+}
+.description-now:hover,
+.reservation-now:hover{
+    transform: scale(1.1)
+}
+.fa-play-circle{
+    font-size:24px;
+    margin-right:20px;
+}
+.title-now{
+    height: 80px;
+    display:flex;
+    padding: 0 10px;
+    margin-top: 0px;
+    justify-content:center;
+    align-items: center;
+    /* background-color:#fff; */
+    background-color:rgba(244, 201, 23, 0.6);
+    /* background-color: lightgray; */
+}
+
+/* .container-now{
+    background-color: gray;
+} */
+
+
+.personalInfo .big{
+    text-align:"right";
+    background-color:"yellow"
+}
+
+
+
+
+
+
+
+
+
+.screen{
+    display:block;
+    width:90%;
+    margin:20px auto;
+    background-color: lightgray;
+font-size:1.5em;
+padding:0.5em;
+
+
+}
+.containterChair{
+    display:grid;
+    justify-content: center;
+}
+.chairgrid {
+display:grid;
+border: 1px black solid;
+background-color: yellow;
+width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+ /* margin:15px auto;  */
+text-align:center;
+padding:10px;
+/* margin: 0 auto; */
+justify-content: center;
+}
+
+.chairgrid span{
+    font-size:1.5em;
+    line-height:200%
+}
+.chairreserved{
+    display:block;
+    background-color:red;
+    /* width:40px;
+    height:40px; */
+    border: 1px solid black;
+    margin:5px;
+    border-radius: 10px;
+
+
+} 
+.chairavailable{
+    display:block;
+    background-color:rgba(244, 201, 23, 0.6);
+    /* width:40px;
+    height:40px; */
+    border: 1px solid black;
+    cursor: pointer;
+    margin:5px;
+    border-radius: 10px;
+
+} 
+.chairchecked{
+    display:block;
+    background-color:green;
+    /* width:40px;
+    height:40px; */
+    border: 1px solid black;
+    margin:5px;
+    border-radius: 10px;
+
+
+} 
+
+.ui.segment.chairgrid{
+    margin:0 auto;
+}
+
+.image>.image{
+width:200px;
+height:280px
+}
+
+.ticket-number label{
+    margin-right:20px;
+}
+
+#numeric-input{
+    width:100%;
+}
+
+
+
+/* .chairavailable:hover {
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+/* 
+
+.chairgrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw;
+    grid-template-rows: 8vw 8vw 8vw 8vw 8vw 8vw;
+    padding-bottom: .5vw;
+}
+
+.chairgrid div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+
+.chairgrid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seats::after {
+    content: ' '
+}
+
+.seats {
+    display: inline
+}
+
+.chairchecked {
+    background-image: url("../img/chairchecked.png");
+    color: #fff;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chairavailable {
+    background-image: url("../img/chairfree.png");
+    color: #ccc;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chairreserved {
+    background-image: url("../img/chairreserved.png");
+    color: #ccc;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+
+@media (max-width: 560px) {
+    header {
+        font-size:2em;
+    }
+}
