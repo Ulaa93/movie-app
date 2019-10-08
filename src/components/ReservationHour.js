@@ -34,7 +34,7 @@ class ReservationHour extends Component {
     submitHandler = (event) => {
       event.preventDefault();
           console.log(this.props.match.params);
-      window.location.href=`/#/selectticket/${this.props.movie.id}`;
+      window.location.href=`/movie-app/#/selectticket/${this.props.movie.id}`;
         }
     
 

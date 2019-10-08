@@ -82,7 +82,7 @@ class PlaceSelection extends Component
        console.log(event.target.value)
        console.log(this.props.match.params.id);
     
-       window.location.href=`/#/personalinfo/${this.props.movie.id}`
+       window.location.href=`/movie-app/#/personalinfo/${this.props.movie.id}`
          }
 
     render() {
