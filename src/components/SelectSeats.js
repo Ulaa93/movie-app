@@ -82,7 +82,7 @@ class PlaceSelection extends Component
        console.log(event.target.value)
        console.log(this.props.match.params.id);
     
-       window.location.href=`/movie-app/#/personalinfo/${this.props.movie.id}`
+       //window.location.href=`/movie-app/#/personalinfo/${this.props.movie.id}`
          }
 
     render() {
@@ -104,7 +104,9 @@ class PlaceSelection extends Component
                     <NavLink  to={`/selectticket/${this.props.movie.id}`}>
                         <button type="button" className="ui button black big" >Back</button>
                     </NavLink >
+                    <NavLink  to={`/personalinfo/${this.props.movie.id}`}>
                         <button type="submit" className="ui button big primary" onClick={this.submitHandler.bind(this)}>Next</button>
+              </NavLink>
                 </div>     
         </div>
 

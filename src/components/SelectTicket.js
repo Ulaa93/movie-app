@@ -51,7 +51,7 @@ class SelectTicket extends Component {
       this.props.selectTicket(this.state.tickets);
       console.log(event.target.value)
       console.log(this.props.match.params.id);
-          window.location.href=`/movie-app/#/selectseats/${this.props.movie.id}`
+        //  window.location.href=`/movie-app/#/selectseats/${this.props.movie.id}`
         }
 
 
@@ -88,7 +88,9 @@ class SelectTicket extends Component {
                     <NavLink to={`/reservationhour/${this.props.movie.id}`}>
                         <button type="button" className="ui button black big" >Back</button>
                     </NavLink >
+                    <NavLink  to={`/selectseats/${this.props.movie.id}`}>
                         <button type="submit" className="ui button big primary" onClick={this.submitHandler.bind(this)}>Next</button>
+            </NavLink>
                 </div>
             </form>
         )

@@ -34,7 +34,7 @@ class ReservationHour extends Component {
     submitHandler = (event) => {
       event.preventDefault();
           console.log(this.props.match.params);
-      window.location.href=`/movie-app/#/selectticket/${this.props.movie.id}`;
+     // window.location.href=`/movie-app/#/selectticket/${this.props.movie.id}`;
         }
     
 
@@ -69,7 +69,10 @@ class ReservationHour extends Component {
                     <NavLink  to={`/reservationdate/${this.props.movie.id}`}>
                         <button type="button" className="ui button  black big" >Back</button>
                     </NavLink >
+                    <NavLink  to={`/selectticket/${this.props.movie.id}`}>
                         <button type="submit" className="ui button big primary" onClick={this.submitHandler.bind(this)}>Next</button>
+                        </NavLink>
+
                 </div>
             </form>
                     )

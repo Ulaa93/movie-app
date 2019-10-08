@@ -78,7 +78,7 @@ componentDidMount(){
         
         console.log(this.state.date, this.state)
     console.log(this.state.booking, dateValue, this.props.match.params.id);
-        window.location.href=`/movie-app/#/reservationhour/${this.props.movie.id}`;
+       // window.location.href=`/movie-app/#/reservationhour/${this.props.movie.id}`;
           }
    
     render() {
@@ -95,7 +95,10 @@ componentDidMount(){
                     <NavLink to="/">
                         <button type="button" className="ui button negative big" >Exit</button>
                     </NavLink >
+                    <NavLink  to={`/reservationhour/${this.props.movie.id}`}>
                         <button type="submit" className="ui button big primary" onClick={this.submitHandler.bind(this)}>Next</button>
+                        </NavLink>
+
                 </div>
             </form>
         )
