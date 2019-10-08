@@ -31,7 +31,7 @@ const App = () => {
 
                 <Route path="/reservationdate/:id" exact component={ReservationDate} />
 
-                <Route path="/movie-app/#/reservationhour/:id" exact component={ReservationHour} />
+                <Route path="/reservationhour/:id" exact component={ReservationHour} />
                 <Route path="/selectticket/:id" exact component={SelectTicket} />
                 <Route path="/selectseats/:id" exact component={SelectSeats} />
                 <Route path="/personalinfo/:id" exact component={PersonalInfo} />
