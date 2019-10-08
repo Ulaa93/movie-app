@@ -51,7 +51,7 @@ class SelectTicket extends Component {
       this.props.selectTicket(this.state.tickets);
       console.log(event.target.value)
       console.log(this.props.match.params.id);
-          window.location.href=`/#/selectseats/${this.props.movie.id}`
+          window.location.href=`/movie-app/#/selectseats/${this.props.movie.id}`
         }
 
 

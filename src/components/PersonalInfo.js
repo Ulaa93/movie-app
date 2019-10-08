@@ -50,7 +50,7 @@ class UserInfo extends Component {
     this.setState({user:{name:this.state.name, lastName:this.state.lastName, email:this.state.email}});
     this.props.selectTicket(this.state.tickets);
     console.log(this.state.user);
-    window.location.href=`/#/confirmation/${this.props.movie.id}`;
+    window.location.href=`/movie-app/#/confirmation/${this.props.movie.id}`;
   }
 
   render(movie) {

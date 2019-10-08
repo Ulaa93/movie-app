@@ -78,7 +78,7 @@ componentDidMount(){
         
         console.log(this.state.date, this.state)
     console.log(this.state.booking, dateValue, this.props.match.params.id);
-        window.location.href=`/#/reservationhour/${this.props.movie.id}`;
+        window.location.href=`/movie-app/#/reservationhour/${this.props.movie.id}`;
           }
    
     render() {
